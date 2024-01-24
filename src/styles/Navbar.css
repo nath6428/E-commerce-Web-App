@@ -1,0 +1,19 @@
+.navbar{
+
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4vh 5vw 4vh 5vw;
+    border-bottom: black solid;
+}
+
+.central-links-container{
+
+    display: flex;
+    width: 100%;
+    margin: 0px 10vw 0px 10vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
