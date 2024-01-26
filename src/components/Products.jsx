@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
-import Navbar from "./Navbar"
 import ProductBox from "./ProductBox"
+import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
+import ProductPage from "./ProductPage"
 
 
 const Products = ({addToCart}) => {
     
+    const navigate = useNavigate()
     const [prodsList, setProdsList] = useState(["x"])
     const [loading, setLoading] = useState(true)
 
@@ -24,6 +26,7 @@ const Products = ({addToCart}) => {
 
     return (
         <>
+        
             <div className="products-container">
                 {loading ? <>Loading</> : prodsList.map((item, index) => <ProductBox product = {item} key = {index} addToCart={addToCart}/>)}        
             </div>

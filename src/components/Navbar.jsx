@@ -8,7 +8,7 @@ const Navbar = () => {
     
     return  <div className="navbar">
         
-        <Link to="/">StoreName</Link>
+        <Link to="/" ><img className="logo" src="src\assets\scamazon.png"></img></Link>
         <div className="central-links-container">
             <Link to="products">Products</Link>
             <Link to="contact-us">Contact Us</Link>

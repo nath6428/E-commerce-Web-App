@@ -17,3 +17,8 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.logo{
+
+    width: 10vw;
+}

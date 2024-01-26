@@ -6,6 +6,7 @@ import Homepage from "./components/Homepage"
 import './styles/App.css'
 import { PropTypes } from "prop-types"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import ProductPage from "./components/ProductPage"
 
 const App = () => {
   
@@ -35,6 +36,7 @@ const App = () => {
 
         <Route path="/" element = {<Homepage />} />
         <Route path="/products" element = {<Products addToCart={addToCart}/>} />
+        <Route path="/products/:productname" element = {<ProductPage />} />
         <Route path="/contact-us" element = {<App />} />
         <Route path="/cart" element = {<Cart cart={itemCart}/>} />
         
