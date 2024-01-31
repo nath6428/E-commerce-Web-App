@@ -1,18 +1,17 @@
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLocation } from 'react-router-dom';
 import '../styles/ProductPage.css'
-
+import { cartContext } from "../contexts/CartContext"
 
 const ProductPage = () => {
   const location = useLocation()
   const product = location.state.product
-  
+  const { addToCart } = useContext(cartContext)
 
   const ratingDisplay = (rating) => {
     
-    console.log(rating)
     rating = Math.floor(rating)
     var stars = []
 
@@ -38,6 +37,7 @@ const ProductPage = () => {
       <p>${product.price}</p>
       <img src={product.thumbnail}></img>
       <p>{product.description}</p>
+      <button onClick={() => {addToCart(product)}}>Add To Cart</button>
     </div>
   );
 }

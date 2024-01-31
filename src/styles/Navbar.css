@@ -5,20 +5,40 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4vh 5vw 4vh 5vw;
-    border-bottom: black solid;
-}
-
-.central-links-container{
-
-    display: flex;
-    width: 100%;
-    margin: 0px 10vw 0px 10vw;
-    flex-direction: row;
-    justify-content: space-evenly;
+    padding: 4vh 2vw 4vh 5vw;
+    background-color:   #ea8a8a;
+    
 }
 
 .logo{
 
-    width: 10vw;
+    width: 14em;
+    background-color:   #ea8a8a;
+    margin-bottom: 5px;
+}
+.central-links-container{
+
+    display: flex;
+    width: 50vw;
+    font-size: 1.75rem;
+    margin: 0px 10vw 0px 10vw;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.cart-icon{
+
+    width: 2em;
+    color: black;
+    text-decoration: none;
+    margin-right: 1.5vw;
+}
+
+.central-links{
+
+    color: black;
+    text-decoration: none;
+    font-weight:1000;
+    
 }

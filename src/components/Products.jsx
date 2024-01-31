@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import ProductBox from "./ProductBox"
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
-import ProductPage from "./ProductPage"
 
 
 const Products = ({addToCart}) => {
@@ -9,7 +8,7 @@ const Products = ({addToCart}) => {
     const navigate = useNavigate()
     const [prodsList, setProdsList] = useState(["x"])
     const [loading, setLoading] = useState(true)
-
+    
     useEffect(() => {
         
         fetch('https://dummyjson.com/products')

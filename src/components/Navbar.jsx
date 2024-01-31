@@ -10,10 +10,10 @@ const Navbar = () => {
         
         <Link to="/" ><img className="logo" src="src\assets\scamazon.png"></img></Link>
         <div className="central-links-container">
-            <Link to="products">Products</Link>
-            <Link to="contact-us">Contact Us</Link>
+            <Link to="products" className="central-links">Products</Link>
+            <Link to="contact-us" className="central-links">Contact Us</Link>
         </div>
-        <Link to="cart"><FontAwesomeIcon icon={faShoppingCart} /></Link>
+        <Link to="cart" className="cart-icon fa-2x"><FontAwesomeIcon  icon={faShoppingCart} /></Link>
     </div>
     
 }
