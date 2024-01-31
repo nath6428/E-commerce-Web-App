@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import ProductBox from "./ProductBox"
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
-
+import '../styles/Products.css'
 
 const Products = ({addToCart}) => {
     
@@ -27,7 +27,7 @@ const Products = ({addToCart}) => {
         <>
         
             <div className="products-container">
-                {loading ? <>Loading</> : prodsList.map((item, index) => <ProductBox product = {item} key = {index} addToCart={addToCart}/>)}        
+                {loading ? <div className="loading-page"><div className="loader"></div></div> : prodsList.map((item, index) => <ProductBox product = {item} key = {index} addToCart={addToCart}/>)}        
             </div>
 
         </>

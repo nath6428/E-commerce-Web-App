@@ -31,6 +31,7 @@
     height: 50vh;
     border: 5px solid #6B1A32;
     justify-content: center;
+    overflow: hidden;
 
 
 }
@@ -46,6 +47,7 @@
 
 .img{
     
+    max-width: 40vw;
     height: 50vh;
     
 }
