@@ -55,10 +55,12 @@ const Cart = ({ sideBar, setShowSidebarCart = () => {} }) => {
   return (
     <div className={sideBar ? "cart-sidebar" : "cart"}>
       {numberedCart.map((item, index) => (
-        <CartCard product={item[0]} count={item[1]} key={index} style = {sideBar} />
+        <CartCard product={item[0]} count={item[1]} key={index} sideBar = {sideBar} />
       ))}
-      <p>Total: ${cartTotal}</p>
-      <button>Checkout</button>
+      <div className={sideBar ? "total-sidebar" : "total"}>
+        <p>Total: ${cartTotal}</p>
+        <button className="checkout-button">Checkout</button>
+      </div>
     </div>
   );
 };

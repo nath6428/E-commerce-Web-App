@@ -13,11 +13,11 @@ const ProductBox = ({product, identifier}) => {
     const { addToCart } = useContext(cartContext)
 
     return (
-        <div className="product-box" onClick={() => {navigate(`${title}`, {state: {product}})}}>
-            <div className="product-img-container">
+        <div className="product-box">
+            <div className="product-img-container" onClick={() => {navigate(`${title}`, {state: {product}})}}>
                 <img className='product-img' src={image}></img>
             </div>
-            <h3 className='product-box-title'>{title}</h3>
+            <h3 className='product-box-title' onClick={() => {navigate(`${title}`, {state: {product}})}}>{title}</h3>
             <p>${price}</p>
             <button onClick={() => {addToCart(product)}}>Add To Cart</button>
 

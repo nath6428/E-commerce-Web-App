@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { cartContext } from "../contexts/CartContext";
+import '../styles/CartCard.css'
 
 const CartCard = ({ product, count, sideBar }) => {
     
@@ -7,6 +8,8 @@ const CartCard = ({ product, count, sideBar }) => {
   const title = product.title
   const price = product.price
   const id = product.id
+  const thumbnail = product.thumbnail
+  const description = product.description
 
   const changeQuantity = (type) => {
 
@@ -31,13 +34,23 @@ const CartCard = ({ product, count, sideBar }) => {
   }
 
   return (
-  <div>
-      <button className='quantity-button' onClick={() => {deleteCartItem()}}>x</button>
-      <p>{title}</p>
-      <div className='quantity'>
-        <button className='quantity-button' onClick={() => {changeQuantity("-")}}>-</button>
-        <div className='quantity-number'>{count}</div>
-        <button className='quantity-button' onClick={() => {changeQuantity("+")}}>+</button>
+  <div className={sideBar ? 'cart-card-sidebar' : 'cart-card'}>
+
+      <div className={sideBar ? 'cc-thumbnail-sidebar-container' : 'cc-thumbnail-container'}>
+        <img className={sideBar ? 'cart-card-sidebar-thumbnail' : 'cart-card-thumbnail'} src={thumbnail}></img>
+      </div>
+      <div className={sideBar ? 'info-sb-container' : 'info-container'}>
+        <div className='info-title-close'>
+          <p>{title}</p>
+          <button className='quantity-button' onClick={() => {deleteCartItem()}}>x</button>
+        </div>
+        <p>${price}</p>
+        <p className={sideBar ? 'hidden' : 'cart-card-desc'}>{description}</p>
+        <div className='quantity'>
+          <button className='quantity-button' onClick={() => {changeQuantity("-")}}>-</button>
+          <div className='quantity-number'>{count}</div>
+          <button className='quantity-button' onClick={() => {changeQuantity("+")}}>+</button>
+        </div>
       </div>
       
 

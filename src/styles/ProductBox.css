@@ -11,11 +11,6 @@
 }
 
 
-.product-box:hover{
-
-    cursor: pointer;
-}
-
 .product-img-container{
 
     width: 10vw;
@@ -30,8 +25,18 @@
     height: 100%;
 }
 
+.product-img:hover{
+
+    cursor: pointer;
+}
+
 .product-box-title{
 
     font-weight: bolder;
     font-style: italic;
+}
+
+.product-box-title:hover{
+
+    cursor: pointer;
 }

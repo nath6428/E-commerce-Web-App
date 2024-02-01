@@ -12,7 +12,12 @@ const ContactUs = ({ setShowSidebarCart }) => {
   })
 
   return (
-    <div className='contact-us-container'>ContactUs</div>
+    <div className='contact-us-container'>
+      <p>Company Name: Scamazon LLC</p>
+      <p>Address: 123 Fake Street, Anytown, USA</p>
+      <p>Phone Number (Customer Service): +1 (555) 123-4567</p>
+      <p>Email (General Inquiry): <a>info@scamazon.fake</a></p>
+    </div>
   )
 }
 

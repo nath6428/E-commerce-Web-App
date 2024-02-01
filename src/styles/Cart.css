@@ -1,7 +1,9 @@
 .cart{
 
     display: flex;
-    background-color: blue;
+    flex-direction: column;
+    margin-bottom: 5vh;
+    font-size: larger;
 }
 
 .cart-sidebar {
@@ -9,44 +11,23 @@
     display: flex;
     flex-direction: column;
     width: 12vw;
-    padding: 2.5vh 1vw 0 1vw;
+    padding: 2.5vh 0.5vw 0 0.5vw;
     border-left: 1px black solid;
     
 }
 
-.cart-card{
+.total{
 
-}
-
-.cart-card-sidebar{
-
-
-}
-
-.quantity{
-
+    align-self: end;
+    margin-right: 2.5vw;
     display: flex;
-    width: fit-content;
-    height: 2.5vh;
-    overflow: hidden;
-
+    flex-direction: column;
+    al-content: end;
 }
 
-.quantity-button{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 1.5vw;
-    height: 2.5vh;
-}
+.checkout-button{
 
-.quantity-number{
-
-    display: flex;
-    justify-content: space-around;
-    align-items: space-around;
-    height: 2.5vh;
-    margin: 0 0.4vw 0 0.4vw;
-    font-size: larger;
+    width: 12vw;
+    height: 5vh;
+    font-size: 1.3rem;
 }

@@ -1,4 +1,8 @@
 .contact-us-container{
-
-    width: 88vw;
+  display: flex;
+  flex-direction: column;
+  width: 95vw;
+  padding: 5vh 0 5vw 5vh;
+  justify-content: center; 
+  font-size: larger;
 }
