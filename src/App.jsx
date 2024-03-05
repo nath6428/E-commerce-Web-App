@@ -27,7 +27,7 @@ const App = () => {
         <Navbar />
         <div className="main-container">
           <Routes>
-            <Route path="/" element={<Homepage setShowSidebarCart = {setShowSidebarCart}/>} />
+            <Route path="/home" element={<Homepage setShowSidebarCart = {setShowSidebarCart}/>} />
             <Route path="/products" element={<Products />} />
             <Route path="/products/:productname" element={<ProductPage />} />
             <Route path="/contact-us" element={<ContactUs setShowSidebarCart = {setShowSidebarCart}/>} />
