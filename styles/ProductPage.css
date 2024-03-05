@@ -1,0 +1,87 @@
+.golden-stars{
+
+    color: gold;
+}
+
+.product-page-container{
+
+    width: 87vw;
+    height: 87vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-img-container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    padding: 2vh 1vw 2vh 1vw;
+}
+
+.product-title{
+
+    font-size: 2.5rem;
+}
+
+.img-container{
+    
+    display: flex;
+    height: 50vh;
+    border: 5px solid #6B1A32;
+    justify-content: center;
+    overflow: hidden;
+
+
+}
+
+.img-button-container{
+    
+    display: flex;
+    justify-content: space-evenly;
+    width: 25vw;
+    margin: 2vw;
+
+}
+
+.img{
+    
+    max-width: 40vw;
+    height: 50vh;
+    
+}
+
+
+.information-container{
+
+    display: flex;
+    flex-direction: column;
+    margin: 15vh 0 0 0;
+    padding-right: 4vw;
+    font-size: large;
+    
+}
+
+.category{
+
+    font-weight: bolder;
+    font-style: italic;
+}
+
+.brand{
+
+    font-weight: bold;
+}
+
+.price{
+
+    font-weight: bold;
+}
+
+.cart-btn{
+
+    width: 15vw;
+    height: 5vh;
+    font-size: large;
+}
